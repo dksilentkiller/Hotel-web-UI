@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Fun Recipe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="shrtcut icon" href="https://i.pinimg.com/736x/d7/11/da/d711dab9a3402948745a7e1290b99789.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+    /* Custom CSS to reduce slider height */
+    .carousel-item img {
+      height: 650px;
+      /* Adjust the height as needed */
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      bottom: 20px;
+      /* Adjust the position of captions */
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #fff;
+      margin-top: -1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar input {
+      padding: 0.5rem;
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+
+    .search-bar button {
+      padding: 0.5rem 1rem;
+      background-color: #ff7404;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .category-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 1rem;
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      color: #ff7404;
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+
+    <!-- nav start -->
+    <header>
+
+      <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Food Bar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20%;">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="recipe.html">Recipes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="services.html">Food Catering</a></li>
+                  <li><a class="dropdown-item" href="services.html">Drink &amp; Beverages</a></li>
+                  <li><a class="dropdown-item" href="services.html">Wedding &amp; Birthday</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#RESTAURANT">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#blog">Blog</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a href="https://github.com/dksilentkiller"><button id="nav-button" class="btn btn-outline-light" type="button" >Contact Us</button></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- nav end -->
+
+    <!-- slider start -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner clip">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="images/FOODY RECIPES (1).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>FOODY RECIPES</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente et sed quasi.</p>
+            <a href="#" class="btn transparent-btn btn-outline-light">Get Started</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/FOODY RECIPES (2).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>MAKE AT YOUR HOME</h1>
+            <p>Prepared with love and care</p>
+            <a href="#" class="btn transparent-btn btn-outline-light">Get Started</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/FOODY RECIPES (3).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>INSTANT COOKING</h1>
+            <p>Hot and fresh at your doorstep</p>
+            <a href="#" class="btn transparent-btn btn-outline-light">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider end -->
+
+    <!-- main section start -->
+    <div class="search-bar mt-5">
+      <input type="text" placeholder="Search recipes...">
+      <button>Search</button>
+    </div>
+
+    <section class="categories">
+
+      <div class="category-card">
+        <a data-aos="fade-up" data-aos-delay="100" href="recipemaking.html">
+          <img src="images/FOODY RECIPES (1).jpg" alt="Recipe Category">
+          <div class="card-content">
+            <h3>Healthy Recipes</h3>
+            <p>Delicious and nutritious meals.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a data-aos="fade-up" data-aos-delay="200" href="services.html">
+          <img src="images/FOODY RECIPES (2).jpg" alt="Recipe Category">
+          <div class="card-content">
+            <h3>Quick & Easy</h3>
+            <p>Simple and fast recipes.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a data-aos="fade-up" data-aos-delay="300" href="index.html">
+          <img src="images/FOODY RECIPES (3).jpg" alt="Recipe Category">
+          <div class="card-content">
+            <h3>Family Favorites</h3>
+            <p>Meals everyone will love.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a data-aos="fade-up" data-aos-delay="100" href="recipemaking.html">
+          <img src="images\/BLOG1.jpg" alt="Weight Management Recipes">
+          <div class="card-content">
+            <h3>Weight Management </h3>
+            <p>Low-calorie, nutrient-dense recipes for weight management.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a data-aos="fade-up" data-aos-delay="100" href="recipemaking.html">
+          <img src="images\/BLOG2.jpg" alt="Kid-Friendly Recipes">
+          <div class="card-content">
+            <h3>Kid-Friendly Recipes</h3>
+            <p>Healthy and delicious meals that appeal to children.</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="category-card">
+        <a data-aos="fade-up" data-aos-delay="100" href="recipemaking.html">
+          <img src="images/BLOG3.jpg" alt="Quick & Easy Recipes">
+          <div class="card-content">
+            <h3>Quick & Easy Recipes</h3>
+            <p>Healthy recipes that can be prepared in 30 minutes or less.</p>
+          </div>
+        </a>
+      </div>
+
+    </section>
+    <!-- main section end -->
+
+    <!-- footer start -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container mb-5 mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h3 id="glow">Subsribe Newsletter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ex temporibus magni ipsam inventore
+                  dolorum sunt, amet vel.</p>
+              </div>
+              <form action class="col-12 mb-5">
+                <div class="row align-items-center">
+                  <div class="col-md-8 mb-3 mb-md-0">
+                    <input id="glow" type="text" class="form-control" placeholder="Enter Email Address"
+                      style="border-color: #ff7404;">
+                  </div>
+                  <div class="col-md-4">
+                    <input id="glow" type="submit" class="btn btn-primary btn-block text-white"
+                      style="background-color: #ff7404; border: #ff7404;" value="Subscribe">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4 mb-5">
+            <h3>About Us</h3>
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis
+              consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
+            <ul class="list-unstyled d-flex ">
+              <li id="glow"><a href="https://www.instagram.com/dksilentkiller/" class="p-2"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+              <li id="glow"><a href="https://github.com/dksilentkiller" class="p-2"><i
+                    class="fa-brands fa-youtube"></i></a></li>
+              <li id="glow"><a href="https://github.com/dksilentkiller" class="p-2"><i
+                    class="fa-brands fa-facebook-f"></i></a></li>
+              <li id="glow"><a href="https://github.com/dksilentkiller" class="p-2"><i
+                    class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 mb-5">
+            <div class="mb-5">
+              <h3>Opening Hours</h3>
+              <p><span></span></p>
+              <p><strong class="d-block font-weight-normal text-black">Sunday-Thursday</strong> 5AM - 10PM</p>
+            </div>
+            <div>
+              <h3>Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="d-block">
+                  <span class="d-block text-black">Address:</span>
+                  <span>
+                    <p>01 Street Name, City Name Here, India</p>
+                  </span>
+                </li>
+                <li class="d-block"><span class="d-block text-black">Phone:</span><span>
+                    <p>+91 XXXXXXXXXX</p>
+                  </span></li>
+                <li class="d-block"><span class="d-block text-black">Email:</span><span>
+                    <p>info@yourdomain.com</p>
+                  </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled footer-link ">
+              <li id="glow"><a href="#" style="color: #ff7404; text-decoration: none;">About</a></li>
+              <li id="glow"><a href="#" style="color: #ff7404; text-decoration: none;">Terms of Use</a></li>
+              <li id="glow"><a href="#" style="color: #ff7404; text-decoration: none;">Disclaimers</a></li>
+              <li id="glow"><a href="#" style="color: #ff7404; text-decoration: none;">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-md-center text-left">
+            <p> Copyright &copy;
+              <script data-cfasync="false"
+                src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by
+              <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank"
+                style="color: #ff7404; text-decoration: none;">dksilentkiller</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200, // Animation duration (ms)
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-vZTG6MPhkR8pPHo+Ji6BXfW+mxbgGRS3IHwfW7G5tmHHURlZZ/2oh7OwmRylXACi" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
